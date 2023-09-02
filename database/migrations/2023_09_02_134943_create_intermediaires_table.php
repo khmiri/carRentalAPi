@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('intermediaires', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nom');
+            $table->string('email');
+            $table->string('telephone');
+            $table->string('adresse');
+            $table->timestamp('cree_le')->useCurrent();
+            $table->timestamp('mis_a_jour_le')->useCurrent();
         });
     }
 
