@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('mode_payment');
             $table->string('num_cheque')->nullable();
             $table->text('description')->nullable();
-            $table->timestamp('créé_le')->useCurrent();
+            $table->timestamp('cree_le')->useCurrent();
             $table->date('date_echeance');
             $table->timestamps();
 

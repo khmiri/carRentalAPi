@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('id_fournisseur');
             $table->string('marque');
-            $table->string('modèle');
-            $table->integer('année');
-            $table->integer('kilométrage');
+            $table->string('modele');
+            $table->integer('annee');
+            $table->integer('kilometrage');
             $table->string('statut');
             $table->string('num_chassis');
             $table->string('carte_grise');
@@ -27,8 +27,8 @@ return new class extends Migration
             $table->string('gamme');
             $table->string('categorie');
             $table->string('VIN');
-            $table->timestamp('créé_le')->useCurrent();
-            $table->timestamp('mis_à_jour_le')->nullable();
+            $table->timestamp('cree_le')->useCurrent();
+            $table->timestamp('mis_a_jour_le')->nullable();
             $table->timestamps();
         });
     }

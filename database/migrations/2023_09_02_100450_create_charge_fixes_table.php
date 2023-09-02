@@ -16,8 +16,8 @@ return new class extends Migration
             $table->unsignedBigInteger('contrat_id');
             $table->decimal('montant', 8, 2);
             $table->text('description')->nullable();
-            $table->timestamp('créé_le')->useCurrent();
-            $table->timestamp('mis_à_jour_le')->nullable();
+            $table->timestamp('cree_le')->useCurrent();
+            $table->timestamp('mis_a_jour_le')->nullable();
             $table->timestamps();
         });
     }
