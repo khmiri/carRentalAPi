@@ -13,7 +13,12 @@ return new class extends Migration
     {
         Schema::create('authentifications', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+        $table->unsignedBigInteger('user_id');
+        $table->string('token');
+        $table->string('device_id'); // If you want to track the device
+        $table->string('ip_address'); // To store the user's IP address
+        $table->timestamp('expires_at')->nullable(); // Token expiration time (optional)
+        $table->timestamps();
         });
     }
 
