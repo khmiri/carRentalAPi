@@ -13,6 +13,22 @@ return new class extends Migration
     {
         Schema::create('vehicules', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('id_fournisseur');
+            $table->string('marque');
+            $table->string('modèle');
+            $table->integer('année');
+            $table->integer('kilométrage');
+            $table->string('statut');
+            $table->string('num_chassis');
+            $table->string('carte_grise');
+            $table->integer('puissance');
+            $table->integer('nombre_cylindre');
+            $table->string('type_carburant');
+            $table->string('gamme');
+            $table->string('categorie');
+            $table->string('VIN');
+            $table->timestamp('créé_le')->useCurrent();
+            $table->timestamp('mis_à_jour_le')->nullable();
             $table->timestamps();
         });
     }

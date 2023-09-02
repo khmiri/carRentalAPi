@@ -13,6 +13,11 @@ return new class extends Migration
     {
         Schema::create('charge_fixes', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('contrat_id');
+            $table->decimal('montant', 8, 2);
+            $table->text('description')->nullable();
+            $table->timestamp('créé_le')->useCurrent();
+            $table->timestamp('mis_à_jour_le')->nullable();
             $table->timestamps();
         });
     }
