@@ -45,7 +45,8 @@ class LocataireController extends Controller
         if (!$locataire) {
             return response()->json(['message' => 'Locataire not found'], 404);
         }
-        $locataire->email = $request->input('email');
+        $locataire->fill($request->all());
+        $locataire->mis_a_jour_le=now();
         $locataire->save();
         return response()->json($locataire);
     }

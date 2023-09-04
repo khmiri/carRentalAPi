@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Locataire extends Model
+class Intermediaire extends Model
 {
-    protected $table = 'locataires'; // Assuming your table name is 'locataires'
+    protected $table = 'intermediaires'; // Assuming your table name is 'intermediaires'
     public $timestamps = false;
     protected $guarded = [];
 

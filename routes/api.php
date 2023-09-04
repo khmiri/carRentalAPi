@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*use App\Http\Controllers\AuthenticationController;*/
+use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\LocataireController;
-/*use App\Http\Controllers\FournisseurController;
+use App\Http\Controllers\FournisseurController;
 use App\Http\Controllers\IntermediaireController;
-use App\Http\Controllers\VehiculeController;
+use App\Http\Controllers\ContratController;/*
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ChargeFixesController;
 use App\Http\Controllers\SupplementsController;*/
 
 // Authentication routes
-/*Route::post('/login', [AuthenticationController::class, 'login']);
-Route::post('/logout', [AuthenticationController::class, 'logout']);*/
+Route::post('/login', [AuthenticationController::class, 'login']);
+Route::post('/logout', [AuthenticationController::class, 'logout']);
 
 // Locataire routes
 Route::get('/locataires', [LocataireController::class, 'index']);
@@ -35,7 +35,7 @@ Route::put('/locataires/{id}', [LocataireController::class, 'update']);
 Route::delete('/locataires/{id}', [LocataireController::class, 'destroy']);
 
 // Fournisseur routes
-/*Route::get('/fournisseurs', [FournisseurController::class, 'index']);
+Route::get('/fournisseurs', [FournisseurController::class, 'index']);
 Route::get('/fournisseurs/{id}', [FournisseurController::class, 'show']);
 Route::post('/fournisseurs', [FournisseurController::class, 'store']);
 Route::put('/fournisseurs/{id}', [FournisseurController::class, 'update']);
@@ -48,13 +48,13 @@ Route::post('/intermediaires', [IntermediaireController::class, 'store']);
 Route::put('/intermediaires/{id}', [IntermediaireController::class, 'update']);
 Route::delete('/intermediaires/{id}', [IntermediaireController::class, 'destroy']);
 
-// Vehicule routes
-Route::get('/vehicules', [VehiculeController::class, 'index']);
-Route::get('/vehicules/{id}', [VehiculeController::class, 'show']);
-Route::post('/vehicules', [VehiculeController::class, 'store']);
-Route::put('/vehicules/{id}', [VehiculeController::class, 'update']);
-Route::delete('/vehicules/{id}', [VehiculeController::class, 'destroy']);
-
+// Contrat routes
+Route::get('/contrats', [ContratController::class, 'index']);
+Route::get('/contrats/{id}', [ContratController::class, 'show']);
+Route::post('/contrats', [ContratController::class, 'store']);
+Route::put('/contrats/{id}', [ContratController::class, 'update']);
+Route::delete('/contrats/{id}', [ContratController::class, 'destroy']);
+/*
 // Reservation routes
 Route::get('/reservations', [ReservationController::class, 'index']);
 Route::get('/reservations/{id}', [ReservationController::class, 'show']);
