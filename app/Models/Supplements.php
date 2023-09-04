@@ -15,4 +15,5 @@ class Supplements extends Model
     public static function all($columns = ['*'])
     {
         return parent::all($columns);
-    }}
+    }
+}
