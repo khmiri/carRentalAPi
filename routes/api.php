@@ -23,6 +23,9 @@ use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ChargeFixesController;
 use App\Http\Controllers\ReglementController;
 use App\Http\Controllers\SupplementsController;
+use App\Http\Controllers\VehiculeController;
+use App\Http\Controllers\MarqueVehiculeController;
+
 
 // Authentication routes
 Route::post('/login', [AuthenticationController::class, 'login']);

@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ChargeFixes extends Model
 {
-    protected $table = 'chargefixes'; // Assuming your table name is 'locataires'
+    protected $table = 'charge_fixes'; // Assuming your table name is 'locataires'
     public $timestamps = false;
     protected $guarded = [];
 

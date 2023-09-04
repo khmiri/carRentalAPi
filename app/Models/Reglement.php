@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reglement extends Model
 {
-    protected $table = 'regelements'; // Assuming your table name is 'locataires'
+    protected $table = 'reglements'; // Assuming your table name is 'locataires'
     public $timestamps = false;
     protected $guarded = [];
 
