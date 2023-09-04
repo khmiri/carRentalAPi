@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-use App\Http\Controllers\AuthenticationController;
+/*use App\Http\Controllers\AuthenticationController;*/
 use App\Http\Controllers\LocataireController;
 use App\Http\Controllers\FournisseurController;
 use App\Http\Controllers\IntermediaireController;
