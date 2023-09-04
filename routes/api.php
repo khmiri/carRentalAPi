@@ -85,18 +85,18 @@ Route::put('/reglements/{id}', [ReglementController::class, 'update']);
 Route::delete('/reglements/{id}', [ReglementController::class, 'destroy']);
 
 // Vehicules routes
-Route::get('/vehicules', [ReglementController::class, 'index']);
-Route::get('/vehicules/{id}', [ReglementController::class, 'show']);
-Route::post('/vehicules', [ReglementController::class, 'store']);
-Route::put('/vehicules/{id}', [ReglementController::class, 'update']);
-Route::delete('/vehicules/{id}', [ReglementController::class, 'destroy']);
+Route::get('/vehicules', [VehiculeController::class, 'index']);
+Route::get('/vehicules/{id}', [VehiculeController::class, 'show']);
+Route::post('/vehicules', [VehiculeController::class, 'store']);
+Route::put('/vehicules/{id}', [VehiculeController::class, 'update']);
+Route::delete('/vehicules/{id}', [VehiculeController::class, 'destroy']);
 
 // Marque_Vehicule routes
-Route::get('/marque_vehicule', [ReglementController::class, 'index']);
-Route::get('/marque_vehicule/{id}', [ReglementController::class, 'show']);
-Route::post('/marque_vehicule', [ReglementController::class, 'store']);
-Route::put('/marque_vehicule/{id}', [ReglementController::class, 'update']);
-Route::delete('/marque_vehicule/{id}', [ReglementController::class, 'destroy']);
+Route::get('/marque_vehicule', [MarqueVehiculeController::class, 'index']);
+Route::get('/marque_vehicule/{id}', [MarqueVehiculeController::class, 'show']);
+Route::post('/marque_vehicule', [MarqueVehiculeController::class, 'store']);
+Route::put('/marque_vehicule/{id}', [MarqueVehiculeController::class, 'update']);
+Route::delete('/marque_vehicule/{id}', [MarqueVehiculeController::class, 'destroy']);
 
 
 
