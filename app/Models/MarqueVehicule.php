@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class MarqueVehicule extends Model
 {
-    protected $table = 'marque_vehicules'; // Assuming your table name is 'locataires'
+    protected $table = 'marques_vehicules'; // Assuming your table name is 'locataires'
     public $timestamps = false;
     protected $guarded = [];
 
