@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contrat;
-//just test
+
 class ContratController extends Controller
 {
     public function index()

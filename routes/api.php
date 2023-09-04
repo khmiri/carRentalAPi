@@ -54,27 +54,6 @@ Route::get('/contrats/{id}', [ContratController::class, 'show']);
 Route::post('/contrats', [ContratController::class, 'store']);
 Route::put('/contrats/{id}', [ContratController::class, 'update']);
 Route::delete('/contrats/{id}', [ContratController::class, 'destroy']);
-/*
-// Reservation routes
-Route::get('/reservations', [ReservationController::class, 'index']);
-Route::get('/reservations/{id}', [ReservationController::class, 'show']);
-Route::post('/reservations', [ReservationController::class, 'store']);
-Route::put('/reservations/{id}', [ReservationController::class, 'update']);
-Route::delete('/reservations/{id}', [ReservationController::class, 'destroy']);
-
-// Charge Fixes routes
-Route::get('/charge-fixes', [ChargeFixesController::class, 'index']);
-Route::get('/charge-fixes/{id}', [ChargeFixesController::class, 'show']);
-Route::post('/charge-fixes', [ChargeFixesController::class, 'store']);
-Route::put('/charge-fixes/{id}', [ChargeFixesController::class, 'update']);
-Route::delete('/charge-fixes/{id}', [ChargeFixesController::class, 'destroy']);
-
-// Supplements routes
-Route::get('/supplements', [SupplementsController::class, 'index']);
-Route::get('/supplements/{id}', [SupplementsController::class, 'show']);
-Route::post('/supplements', [SupplementsController::class, 'store']);
-Route::put('/supplements/{id}', [SupplementsController::class, 'update']);
-Route::delete('/supplements/{id}', [SupplementsController::class, 'destroy']);*/
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
