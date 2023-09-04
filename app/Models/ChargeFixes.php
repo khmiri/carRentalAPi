@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class ChargeFixes extends Model
 {
-    use HasFactory;
+    protected $table = 'chargefixes'; // Assuming your table name is 'locataires'
+    public $timestamps = false;
+    protected $guarded = [];
+
+
+    public static function all($columns = ['*'])
+    {
+        return parent::all($columns);
+    }
 }

@@ -18,10 +18,11 @@ use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\LocataireController;
 use App\Http\Controllers\FournisseurController;
 use App\Http\Controllers\IntermediaireController;
-use App\Http\Controllers\ContratController;/*
+use App\Http\Controllers\ContratController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\ChargeFixesController;
-use App\Http\Controllers\SupplementsController;*/
+use App\Http\Controllers\ReglementController;
+use App\Http\Controllers\SupplementsController;
 
 // Authentication routes
 Route::post('/login', [AuthenticationController::class, 'login']);
@@ -54,7 +55,7 @@ Route::get('/contrats/{id}', [ContratController::class, 'show']);
 Route::post('/contrats', [ContratController::class, 'store']);
 Route::put('/contrats/{id}', [ContratController::class, 'update']);
 Route::delete('/contrats/{id}', [ContratController::class, 'destroy']);
-/*
+
 // Reservation routes
 Route::get('/reservations', [ReservationController::class, 'index']);
 Route::get('/reservations/{id}', [ReservationController::class, 'show']);
@@ -74,7 +75,29 @@ Route::get('/supplements', [SupplementsController::class, 'index']);
 Route::get('/supplements/{id}', [SupplementsController::class, 'show']);
 Route::post('/supplements', [SupplementsController::class, 'store']);
 Route::put('/supplements/{id}', [SupplementsController::class, 'update']);
-Route::delete('/supplements/{id}', [SupplementsController::class, 'destroy']);*/
+Route::delete('/supplements/{id}', [SupplementsController::class, 'destroy']);
+
+// Regelements routes
+Route::get('/reglements', [ReglementController::class, 'index']);
+Route::get('/reglements/{id}', [ReglementController::class, 'show']);
+Route::post('/reglements', [ReglementController::class, 'store']);
+Route::put('/reglements/{id}', [ReglementController::class, 'update']);
+Route::delete('/reglements/{id}', [ReglementController::class, 'destroy']);
+
+// Vehicules routes
+Route::get('/vehicules', [ReglementController::class, 'index']);
+Route::get('/vehicules/{id}', [ReglementController::class, 'show']);
+Route::post('/vehicules', [ReglementController::class, 'store']);
+Route::put('/vehicules/{id}', [ReglementController::class, 'update']);
+Route::delete('/vehicules/{id}', [ReglementController::class, 'destroy']);
+
+// Marque_Vehicule routes
+Route::get('/marque_vehicule', [ReglementController::class, 'index']);
+Route::get('/marque_vehicule/{id}', [ReglementController::class, 'show']);
+Route::post('/marque_vehicule', [ReglementController::class, 'store']);
+Route::put('/marque_vehicule/{id}', [ReglementController::class, 'update']);
+Route::delete('/marque_vehicule/{id}', [ReglementController::class, 'destroy']);
+
 
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

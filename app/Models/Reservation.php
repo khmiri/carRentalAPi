@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Reservation extends Model
 {
-    use HasFactory;
+    protected $table = 'reservations'; // Assuming your table name is 'locataires'
+    public $timestamps = false;
+    protected $guarded = [];
+
+
+    public static function all($columns = ['*'])
+    {
+        return parent::all($columns);
+    }
 }
