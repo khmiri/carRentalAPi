@@ -26,10 +26,14 @@ use App\Http\Controllers\SupplementsController;
 use App\Http\Controllers\VehiculeController;
 use App\Http\Controllers\MarqueVehiculeController;
 
-
 // Authentication routes
-Route::post('/login', [AuthenticationController::class, 'login']);
-Route::post('/logout', [AuthenticationController::class, 'logout']);
+// Route::post('/login', 'AuthController@login');
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+// Route::post('/login', [AuthenticationController::class, 'login']);
+// Route::post('/logout', [AuthenticationController::class, 'logout']);
 
 // Locataire routes
 Route::get('/locataires', [LocataireController::class, 'index']);
@@ -103,6 +107,6 @@ Route::delete('/marque_vehicule/{id}', [MarqueVehiculeController::class, 'destro
 
 
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
