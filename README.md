@@ -147,8 +147,3 @@ php artisan serve
 MIT License — free to use and modify.
 
 
-
-👉 align BOTH your repos so they look like a **real startup portfolio (same branding, same README style)**  
-👉 or make you a **GitHub profile README that makes you look hireable instantly**
-::contentReference[oaicite:0]{index=0}
-```
